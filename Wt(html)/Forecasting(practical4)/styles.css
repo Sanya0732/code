@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+.current-weather,
+.hourly-forecast,
+.daily-forecast {
+    
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.current-weather h2,
+.hourly-forecast h2,
+.daily-forecast h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.current-weather p,
+.hourly-forecast table,
+.daily-forecast ul {
+    border: 1px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.current-weather p strong,
+.hourly-forecast th,
+.daily-forecast li strong {
+    color: #333;
+}
+.weather-info {
+    flex: 1; /* Take up remaining space */
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNT9LBJ5AqZ096J7szUyaXzG2mmGpD-YBCA&usqp=CAU'); /* Replace with your actual weather icons */
+    background-size: cover;
+    /* float:left; */
+    margin-left: auto;
+}
+
+.sunny {
+    background-position: 0 0; /* Adjust position according to your weather icons */
+}
+
+/* Styling for the horizontal scrolling container */
+.scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.daily-forecast ul {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.daily-forecast li {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.hourly-forecast table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.hourly-forecast th,
+.hourly-forecast td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.hourly-forecast th {
+    background-color: #f2f2f2;
+}
+/* styles.css */
+/* Previous CSS rules here */
+
+.scrollable-container ul li {
+    margin-bottom: 10px;
+}
+.scrollable-container ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%; /* Optional: Rounded corners for circular images */
+}
+.current-weather {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
